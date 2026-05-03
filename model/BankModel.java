@@ -2,7 +2,7 @@ package model;
 
 
 public class BankModel {
-    public class Book {
+    public static class Book {
         private String bookname;
         private String author;
 

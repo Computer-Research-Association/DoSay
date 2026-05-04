@@ -1,5 +1,6 @@
 package controller;
 import model.BankModel.Book;
+import view.BankView;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,6 +9,7 @@ public class BankController {
     private List<Book> BookList = new ArrayList<>();
 
     public void run() {
+        BankView bankView = new BankView();
         while (true) {
             bankView.printMainMenu();
             int idx = bankView.getIndex();

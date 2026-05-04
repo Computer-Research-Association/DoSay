@@ -1,11 +1,9 @@
 package model;
 
-
 public class BankModel {
     public static class Book {
         private String bookname;
         private String author;
-
 
         public Book() {}
 
@@ -30,7 +28,11 @@ public class BankModel {
             this.author = author;
         }
 
-
+        @Override
+        public String toString() {
+            return this.bookname + " - " + this.author;
+            // "User{name='" + this.bookname + "', age=" + this.author + "}";
+        }
     }
 
 }

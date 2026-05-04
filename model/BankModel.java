@@ -1,11 +1,9 @@
 package model;
 
-
 public class BankModel {
     public static class Book {
         private String bookname;
         private String author;
-
 
         public Book() {}
 

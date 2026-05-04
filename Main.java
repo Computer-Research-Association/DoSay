@@ -1,6 +1,8 @@
 import controller.BankController;
 
-void main() {
-    BankController _controller = new BankController();
-    _controller.run();
+public static void Main {
+    void Main() {
+        BankController _controller = new BankController();
+        _controller.run();
+    }
 }

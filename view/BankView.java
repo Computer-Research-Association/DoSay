@@ -45,6 +45,6 @@ public class BankView {
     }
 
     public void printSuccessMessage() {
-        System.out.println("처리가 완료되었습니다.");
+        System.out.println("처리가 완료되었습니다. ");
     }
 }

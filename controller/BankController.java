@@ -24,7 +24,7 @@ public class BankController {
                     String keyword = bankView.inputSearchKeyword();
                     List<Book> found = find(keyword, "");
                     if (found.isEmpty()) {
-                        System.out.println("검색 결과 없음");
+                        System.out.println("검색 결과 없음 ");
                         break;
                     }
                     bankView.printBookList(found);

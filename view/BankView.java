@@ -38,10 +38,15 @@ public class BankView {
     }
 
     public void printBookList(List<Book> list) {
+        System.out.println("======== List ========");
+        if (list.isEmpty()) {
+            System.out.println("도서 목록이 비어있습니다.");
+        }
         for (int i = 0; i < list.size(); i++) {
             System.out.print(i+1 + ". ");
             System.out.println(list.get(i).toString());
         }
+        System.out.println("======================");
     }
 
     public void printSuccessMessage() {

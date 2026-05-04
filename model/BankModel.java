@@ -28,7 +28,11 @@ public class BankModel {
             this.author = author;
         }
 
-
+        @Override
+        public String toString() {
+            return this.bookname + " - " + this.author;
+            // "User{name='" + this.bookname + "', age=" + this.author + "}";
+        }
     }
 
 }

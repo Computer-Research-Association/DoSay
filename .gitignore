@@ -2,4 +2,8 @@
 
 out/
 
+src/lib
+
+src/database/library.db
+
 BankSystem.iml

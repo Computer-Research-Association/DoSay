@@ -2,12 +2,12 @@ package view;
 
 import java.util.Scanner;
 import java.util.List;
-import model.BankModel.Book;
+import model.Book;
 
-public class BankView {
-    private Scanner sc = new Scanner(System.in);
+public class LibraryView {
+    private final Scanner sc = new Scanner(System.in);
 
-    public BankView() {}
+    public LibraryView() {}
 
     public void printMainMenu() {
         System.out.println("1. 도서 추가");
@@ -32,8 +32,13 @@ public class BankView {
     }
 
     // update case에서 필요
-    public String inputSearchKeyword() {
-        System.out.print("검색할 책 제목 >> ");
+    public String inputSearchTitle() {
+        System.out.print("검색할 책 제목(공백 시 무시) >> ");
+        return sc.nextLine();
+    }
+
+    public String inputSearchAuthor() {
+        System.out.print("검색할 책 저자(공백 시 무시) >> ");
         return sc.nextLine();
     }
 
@@ -49,7 +54,19 @@ public class BankView {
         System.out.println("======================");
     }
 
+    public void printNoSearchMessage() {
+        System.out.println("검색 결과가 없습니다.");
+    }
+
+    public void printInvalidInputRetryMessage() {
+        System.out.println("잘못된 입력입니다. 다시 입력해주세요.");
+    }
+
     public void printSuccessMessage() {
         System.out.println("처리가 완료되었습니다.");
+    }
+
+    public void printQuitMessage() {
+        System.out.println("프로그램을 종료합니다.");
     }
 }
